@@ -1,0 +1,1 @@
+<p>Cảm ơn bạn đã tin tưởng và ủng hộ cửa hàng <3 Chúng tôi sẽ liên lệ trong thời gian sớm nhất <3</p>
