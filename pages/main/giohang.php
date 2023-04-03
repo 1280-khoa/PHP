@@ -1,4 +1,4 @@
-
+<p>Giỏ hàng
 <?php
 if(isset($_SESSION['dangky'])){
     echo 'Xin chào: '.'<span style="color: red;">'.$_SESSION['dangky'].'</span>';
@@ -11,59 +11,6 @@ if(isset($_SESSION['dangky'])){
 	}
 
 ?>
-
- <!--  <?php
-  if(isset($_SESSION['cart'])){
-  	$i=0;
-  	$tongtien=0;
-  	foreach($_SESSION['cart'] as $cart_item){
-  		$thanhtien = $cart_item['soluong '] * $cart_item['giasanpham'];
-  		$tongtien+=$thanhtien;
-  		$i++;
-
-  ?>
-  <tr>
-    <td><?php echo $i ?></td>
-    <td><?php echo $cart_item['masanpham'] ?></td>
-    <td><?php echo $cart_item['tensanpham'] ?></td>
-    <td><img src="admincp/modules/quanlysp/uploads/<?php echo $cart_item['hinhanh'] ?>" width=150px></td>
-    <td>
-    	<a style="font-size: 20px;" href="pages/main/themgiohang.php?tru=<?php echo $cart_item['id'] ?> ">-</a>
-    	<?php echo $cart_item['soluong '] ?>
-    	<a style="font-size: 20px;" href="pages/main/themgiohang.php?cong=<?php echo $cart_item['id'] ?> ">+</a>
-    	
-
-
-    </td>
-    <td><?php echo number_format($cart_item['giasanpham'],0,',','.').' VND'; ?></td>
-    <td><?php echo number_format($thanhtien,0,',','.').'VND'; ?></td>
-    <td><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_item['id'] ?> ">Xóa</a></td>
-  </tr>
-<?php
-	}
-?>
-<tr>
-    <td  colspan="8">
-    	<p style="float: left;">Tổng tiền: <?php echo number_format($tongtien,0,',','.').' VND'; ?></p><br/>
-    	<p style="float: right;"><a href="pages/main/themgiohang.php?xoatatca=1">Xóa tât cả</a></p>
-
-
-
-    </td>
-</tr>
-<?php 
-}else{
-?>
-<tr>
-    <td colspan="8"><p>Hiện tại giỏ hàng trống</p></td>
-</tr>
-<?php 
-}
-?>
-
-
-</table> -->
-
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -129,22 +76,18 @@ if(isset($_SESSION['dangky'])){
                         <button type="button" class="btn btn-default">
                             <a href="pages/main/themgiohang.php?xoatatca=1">Xóa tât cả</a>
                         </button></td>
-                        <div style="clear: both;"></div>
-                        <?php
+                        <td>
+                            <button type="button" class="btn btn-default"><?php
                             if(isset($_SESSION['dangky'])){
                                 ?>
-                                <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
+                                <a href="pages/main/thanhtoan.php">Đặt hàng</a>
                         <?php
                             }else{
                         ?>
-                            <p><a href="index.php?quanly=dangky">Đăng ký đặt hàng</a></p>
+                            <a href="index.php?quanly=dangky">Đăng ký đặt hàng</a>
                         <?php
                             }
-                        ?>
-                        
-                        
-
-                        <td>
+                        ?></button></td>
                     </tr>
                      <?php 
 					}else{

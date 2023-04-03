@@ -2,21 +2,24 @@
 <table border="1" width="100%" style="border-collapse: collapse;">
 <form method="POST" action="modules/quanlysp/xuly.php" enctype="multipart/form-data">
   <tr>
-    <td>Tên sản phẩm </td>
-    <td><input type="text" name="tensanpham" width="100%"></td>
+    <td> <label  class="form-label">Tên Sản Phẩm</label> </td>
+    <td><input type="text"class="form-control"  name="tensanpham" width="100%"></td>
+   
   </tr>
   <tr>
-    <td>Mã sản phẩm </td>
-    <td><input type="text" name="masanpham" width="100%"></td>
+    
+    <td> <label  class="form-label">Mã sản phẩm</label> </td>
+    <td><input type="text"class="form-control"  name="masanpham" width="100%"></td>
   </tr>
   <tr>
-    <td>Giá sản phẩm </td>
-    <td><input type="text" name="giasanpham" width="100%"></td>
+    
+    <td> <label  class="form-label">Giá sản phẩm </label> </td>
+    <td><input type="text"class="form-control"  name="giasanpham" width="100%"></td>
   </tr>
 
   <tr>
-    <td>Số Lượng sản phẩm </td>
-    <td><input type="text" name="soluong" width="100%"></td>
+    <td> <label  class="form-label">Số Lượng sản phẩm </label> </td>
+    <td><input type="text"class="form-control"  name="soluong" width="100%"></td>
   </tr>
   <tr>
     <td>hình ảnh sản phẩm </td>
@@ -58,7 +61,7 @@
   </tr>
   <tr>
     
-    <td colspan="2"><input type="submit" name="themsanpham" value="Thêm danh mục sản phẩm"></td>
+    <td colspan="2"> <button type="submit" name="themsanpham" class="btn btn-primary">Thêm Sản Phẩm Mới </button> <br></td>
   </tr>
 </form>
 </table>

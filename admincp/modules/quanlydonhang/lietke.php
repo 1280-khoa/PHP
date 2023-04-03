@@ -3,16 +3,18 @@
   $query_lietke_dh = mysqli_query($mysqli,$sql_lietke_dh);
  ?>
 <p>Liệt kê đơn hàng</p>
-<table border="1" width="100%" style="border-collapse: collapse;">
-  <tr>
-    <th>Id</th>
-    <th>Mã đơn hàng</th>
-    <th>Tên khách hàng</th>
-    <th>Đại chỉ</th>
-    <th>Email</th>
-    <th>Số điện thoại</th>
-    <th>Tình trạng</th>
-    <th>Quản lý</th>
+<div class="container-fluid pt-4 px-4">
+<div class="table-responsive">
+      <table class="table text-start align-middle table-bordered table-hover mb-0">
+    <th scope="col">Id</th>
+    <th scope="col">Mã đơn hàng</th>
+    <th scope="col">Tên khách hàng</th>
+    <th scope="col">Đại chỉ</th>
+    <th scope="col">Email</th>
+    <th scope="col">Số điện thoại</th>
+    <th scope="col">Tình trạng</th>
+    <th scope="col">Quản lý</th>
+    <th scope="col">In hóa đơn</th>
   </tr>
   <?php 
   $i = 0;
@@ -39,6 +41,9 @@
     <td>
     	<a href="index.php?action=donhang&query=xemdonhang&code=<?php echo $row['code_cart'] ?>">Xem đơn hàng</a>
     </td>
+    <td>
+      <a href="modules/quanlydonhang/indonhang.php?code=<?php echo $row['code_cart'] ?>">In đơn hàng</a>
+    </td>
   </tr>
 
 <?php 
@@ -46,3 +51,5 @@
 ?>
 
 </table>
+</div>
+</div>

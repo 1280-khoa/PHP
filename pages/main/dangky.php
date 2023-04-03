@@ -11,7 +11,7 @@
         }elseif($sql_dangky){
             echo '<p style="color: green";>Bạn đã đăng ký thành công</p>';
             $_SESSION['dangky'] = $tenkhachhang;
-
+            $_SESSION['email'] = $email;
             $_SESSION['id_khachhang'] = mysqli_insert_id($mysqli);
             header('Location:index.php?quanly=giohang');
         }

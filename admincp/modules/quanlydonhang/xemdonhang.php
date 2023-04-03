@@ -16,10 +16,12 @@
   </tr>
   <?php 
   $i = 0;
+  $tongtien = 0;
   while($row = mysqli_fetch_array($query_lietke_dh)){
   	$i++;
   	$thanhtien = $row['giasanpham']*$row['soluongmua'];
-  	$tongtien += $thanhtien;
+  	$tongtien += $thanhtien ;
+    
    ?>
   <tr style="text-align: center;">
     <td><?php echo $i ?></td>

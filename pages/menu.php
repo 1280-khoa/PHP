@@ -1,4 +1,4 @@
- <?php 
+<?php 
        $sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
        $query_danhmuc = mysqli_query($mysqli,$sql_danhmuc);
  ?> 
@@ -9,10 +9,8 @@
 	}
 ?>
 
-<div class="menu">
-	
-	
-	<div class="main_nav_container">
+<div class="menu" >
+	<div class="main_nav_container" >
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-right">
@@ -52,10 +50,6 @@
 								<?php 
 								}
 								?>
-								
-
-
-								
 							</ul>
 							
 						</nav>
@@ -63,10 +57,11 @@
 				</div>
 			</div>
 		</div>
-		<li style="margin-left: 74%; margin-top: 10px; list-style: none;">
+		<li style="margin-left: 74%; margin-top: 20px; list-style: none;">
 			<form action="index.php?quanly=timkiem" method="POST">
-				<input placeholder="Tìm kiếm sản phẩm..." href="#" name="tukhoa"></input>
-				<input type="submit" name="timkiem" value="Tìm kiếm">
+				<input class="placeholder-search" placeholder="  Tìm kiếm sản phẩm..." href="#" name="tukhoa"></input>
+				<input class="btn-search" type="submit" name="timkiem" value="Tìm kiếm">
+				
 			</form>
 		</li>
 </div>

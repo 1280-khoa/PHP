@@ -10,21 +10,24 @@ while($row = mysqli_fetch_array($query_sua_sp)){
    ?>
 <form method="POST" action="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>" enctype="multipart/form-data">
   <tr>
-    <td>Tên sản phẩm </td>
-    <td><input type="text" value="<?php echo $row['tensanpham'] ?>" name="tensanpham" width="100%"></td>
+    
+     <td> <label  class="form-label">Tên Sản Phẩm</label> </td>
+    <td><input type="text"class="form-control" value="<?php echo $row['tensanpham'] ?>" name="tensanpham" width="100%"></td>
   </tr>
   <tr>
-    <td>Mã sản phẩm </td>
-    <td><input type="text" value="<?php echo $row['masanpham'] ?>" name="masanpham" width="100%"></td>
+    
+     <td> <label  class="form-label">Mã sản phẩm</label> </td>
+    <td><input type="text"class="form-control" value="<?php echo $row['masanpham'] ?>" name="tensanpham" width="100%"></td>
   </tr>
   <tr>
-    <td>Giá sản phẩm </td>
-    <td><input type="text" value="<?php echo $row['giasanpham'] ?>" name="giasanpham" width="100%"></td>
+    
+    <td> <label  class="form-label">Giá sản phẩm </label> </td>
+    <td><input type="text"class="form-control" value="<?php echo $row['giasanpham'] ?>" name="tensanpham" width="100%"></td>
   </tr>
 
   <tr>
-    <td>Số Lượng sản phẩm </td>
-    <td><input type="text" value="<?php echo $row['soluong'] ?>" name="soluong" width="100%"></td>
+     <td> <label  class="form-label">Số lượng sản phẩm </label> </td>
+    <td><input type="text"class="form-control" value="<?php echo $row['soluong'] ?>" name="tensanpham" width="100%"></td>
   </tr>
   <tr>
     <td>hình ảnh sản phẩm </td>
@@ -84,7 +87,7 @@ while($row = mysqli_fetch_array($query_sua_sp)){
     </td>
   </tr>
   <tr>
-    <td colspan="2"><input type="submit" name="suasanpham" value="Sửa sản phẩm"></td>
+    <td colspan="2"><button type="submit" name="suasanpham" class="btn btn-primary">Sửa Sản Phẩm</button></td>
   </tr>
 </form>
 <?php

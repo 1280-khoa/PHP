@@ -32,7 +32,6 @@ body{
 
 }
 .sidebar{
-    
     height: 390px;
     width: 20%;
     margin-top: 5px;
@@ -69,7 +68,7 @@ ul.list_sidebar li {
     width: 100%;
     margin-top: 5px;
     margin-left: 5px;
-    float:right ;
+    
     
 }
 ul.product_list {
@@ -133,3 +132,69 @@ input.addtocart {
     width: 50%;
         margin-left: 100px;
 }
+
+/* Tabs */
+.tabs {
+margin-top: 40px;
+  width: 100%;
+  background-color: grey;
+  border-radius: 5px 5px 5px 5px;
+}
+ul#tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  overflow: auto;
+}
+ul#tabs-nav li {
+  float: left;
+  font-weight: bold;
+  margin-right: 2px;
+  padding: 8px 10px;
+  border-radius: 5px 5px 5px 5px;
+  /*border: 1px solid #d5d5de;
+  border-bottom: none;*/
+  cursor: pointer;
+}
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+  background-color: black;
+}
+#tabs-nav li a {
+  text-decoration: none;
+  color: #FFF;
+}
+.tab-content {
+  padding: 10px;
+  border: 5px solid grey;
+  background-color: white;
+}
+
+/* Just for CodePen styling - don't include if you copy paste */
+html {
+  margin: 0;
+  padding: 0;
+}
+body { 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  margin: 2em;
+}
+
+
+
+    .placeholder-search{
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 30px;
+    }
+    .btn-search{
+        height: 30px;
+        border-radius: 6px;
+        background-color: #D3D3D3;
+    }
+    .btn-search:hover{
+        height: 30px;
+        border-radius: 6px;
+        background-color: #ADD8E6;
+    }
